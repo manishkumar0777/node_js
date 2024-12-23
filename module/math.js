@@ -11,3 +11,8 @@ module.exports = {
     add,
     subs,
 }
+
+//another way of exporting the function
+
+exports.add = (a,b) => a+b;
+exports.subs = (a,b) => a-b;

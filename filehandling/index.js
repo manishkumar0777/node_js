@@ -9,11 +9,11 @@ fs.writeFile("./number.txt", "mk:098978", (err) => {});
 
 //for reading the file
 
-//sync
+//sync : Blocking Operation
 const result = fs.readFileSync('./name.txt', "utf-8");
 console.log(result);
 
-//async : this function dont return the value 
+//async : Non Blocking Operation 
 fs.readFile('./number.txt', 'utf-8', (err,result) => {
     if(!err){
         console.log(err);
@@ -21,3 +21,5 @@ fs.readFile('./number.txt', 'utf-8', (err,result) => {
         console.log(result);
     }
 })
+
+//not only this ther are many function in the fs directory 
