@@ -4,7 +4,7 @@ const express = require('express'); // importing express for better handling
 //initializing express
 const app = express();
 
-//handling the url
+//handling the url // used as : app.METHOD(PATH , HANDLER); 
 app.get('/' , (req, res) => {
     res.send("Hello From HomePage");
 })
@@ -21,3 +21,7 @@ app.get('/about' , (req, res) => {
 // myServer.listen(8000, () => {console.log("Server started")})
 
 app.listen(8000, ()=> {console.log("server started")}); 
+
+
+// in verson of the express you see the ^4.18.2 
+// in this symbol ^ tells that range is between 4.18.2 -> 5.00.0
