@@ -10,6 +10,12 @@ const PORT = 8000;
 //using middleware for the data from the user : DECODING
 app.use(express.urlencoded({extended : false}));
 
+//next middle ware 
+app.use((req, res, next) => {
+    console.log('Hello from middle ware ');
+    next(); // if this next is not called then req will stuck here
+})
+
 
 //routes*********************************
 
